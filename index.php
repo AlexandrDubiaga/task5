@@ -8,6 +8,7 @@ $mysql = new MySQL();
 $mysql->dbconnect();
 $mysql->saveData("Hosting","Max");
 $mysql->getData("Hosting");
+$mysql->deleteData("Hosting");
   
   
 include('template.php');
