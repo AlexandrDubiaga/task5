@@ -8,7 +8,7 @@ $mysql = new MySQL();
 $mysql->dbconnect();
 $mysql->saveData("user2","task5");
 $mysql->getData("user2");
-//$mysql->deleteData("user2");
+$mysql->deleteData("user2");
  
 include('template.php');
 
