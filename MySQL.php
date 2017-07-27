@@ -29,6 +29,9 @@ class MySQL implements iWorkData
     public function saveData($key, $val)
     {
     $result = "INSERT into MY_TEST(key,data)VALUES($key,$val)";
+	    if($result){
+	    	echo "Data insertes";
+	    }else "No insert";
     }
     
     public function getData($key)
