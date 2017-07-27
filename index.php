@@ -6,7 +6,7 @@ include('PostgreSQL.php');
 include('MySQL.php');
 $mysql = new MySQL();
 $mysql->dbconnect();
-$mysql->saveData("user2","task5");
+$mysql->saveData(100,200);
 
 
 
