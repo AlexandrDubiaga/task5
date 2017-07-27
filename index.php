@@ -7,7 +7,10 @@ include('MySQL.php');
 $mysql = new MySQL();
 $mysql->dbconnect();
 $mysql->saveData("Hosting","Max");
-
+$mysql->getData("Hosting");
+  
+  
+include(template.php);
 
 
 
