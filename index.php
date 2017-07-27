@@ -6,11 +6,10 @@ include('PostgreSQL.php');
 include('MySQL.php');
 $mysql = new MySQL();
 $mysql->dbconnect();
-$mysql->saveData("Hosting","Max");
+$mysql->saveData("user2","task5");
 $mysql->getData("Hosting");
 $mysql->deleteData("Hosting");
-  
-  
+ 
 include('template.php');
 
 
