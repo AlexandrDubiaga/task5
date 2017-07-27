@@ -37,7 +37,7 @@ class MySQL implements iWorkData
     
     public function getData($key)
     {
-     $result = mysql_query("SELECT FROM MY_TEST WHERE key= $key "); echo mysql_error();
+     $result = mysql_query("SELECT FROM MY_TEST WHERE key= \"$key\" "); echo mysql_error();
      while($row = mysql_fetch_array($result)){
      	echo $row['key']."<br>";
 	echo $row['data']."<br>";
