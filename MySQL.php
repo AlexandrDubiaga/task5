@@ -18,6 +18,9 @@ class MySQL implements iWorkData
 	
     public function dbconnect() {
     $this->conn = mysql_connect($this->host, $this->user, $this->password) or die ("<br/>cant connect to  MySQL");
+    if($this->conn){
+    	echo "Connect to DataBase";
+    }
 		
     mysql_select_db($this->dB,$this->conn) or die ("<br/>DB not found");
 	
