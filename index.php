@@ -10,7 +10,7 @@ $mysql->saveData("Hosting","Max");
 $mysql->getData("Hosting");
   
   
-include(template.php);
+include('template.php');
 
 
 
