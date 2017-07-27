@@ -47,7 +47,7 @@ class MySQL implements iWorkData
     }
     public function deleteData($key)
     {
-    
+    	$delete = mysql_query("DELETE  FROM MY_TEST WHERE `key`=\"$key\" "); echo mysql_error();
     }
 }
 ?>
