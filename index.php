@@ -7,8 +7,8 @@ include('MySQL.php');
 $mysql = new MySQL();
 $mysql->dbconnect();
 $mysql->saveData("user2","task5");
-$mysql->getData("Hosting");
-$mysql->deleteData("Hosting");
+$mysql->getData("user2");
+//$mysql->deleteData("user2");
  
 include('template.php');
 
