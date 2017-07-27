@@ -42,7 +42,7 @@ class MySQL implements iWorkData
      	echo $row['key']."<br>";
 	echo $row['data']."<br>";
      }
-	include('template.php');
+	//include('template.php');
 	    
     }
     public function deleteData($key)
