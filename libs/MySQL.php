@@ -8,10 +8,10 @@ class MySQL implements iWorkData
     private $conn;
     public function __construct()
     {
-        $this->user = "mmbti";
-        $this->dB = "test";
-        $this->host = "10.3.149.123";
-        $this->password = "bti";
+        $this->user = "user1";
+        $this->dB = "user1";
+        $this->host = "localhost";
+        $this->password = "tuser1";
     
     }
 
