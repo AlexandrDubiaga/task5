@@ -6,8 +6,7 @@
      </head>
      <body>
     <?php
-    echo $getCookie;
+  
     ?>
-
      </body>
 </html>
