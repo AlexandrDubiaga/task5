@@ -1,10 +1,13 @@
-<html> 
-     <head> 
-          <title> 
+<html>
+     <head>
+          <title>
              task5
           </title>
-     </head> 
-     <body> 
-      
-     </body> 
+     </head>
+     <body>
+    <?php
+    echo $getCookie;
+    ?>
+
+     </body>
 </html>

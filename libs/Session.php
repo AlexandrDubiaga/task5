@@ -3,28 +3,30 @@ class Session implements iWorkData
 {
     public function saveData($key, $val)
     {   
-        if(!$key || !$val){
+        if(!$key || !$val || empty($key) || empty($val)){
             return false;
         }
-        if(isset($key))
+        if(isset($key) && isset($val) )
         {
-        $_SESSION[$key] = $val;
-            return true;
+            return  $_SESSION[$key] = $val;
         }
+        return false;
     }
-    
     public function getData($key)
     {
-        if(isset($key) || isset($_SESSION[$key]))
+        if(isset($key) || isset($_SESSION[$key]) || !empty($key))
         {
             return $_SESSION[$key];
-        }
+        }return false;
     
     }
     public function deleteData($key)
     {
-        unset($_SESSION[$key]);
-        return true;
+        if(!empty($key)) {
+            unset($_SESSION[$key]);
+            session_destroy();
+            return true;
+        }return false;
     }
 }
 ?>
