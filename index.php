@@ -1,9 +1,9 @@
 <?php
 session_start();
-include('Cookie.php');
-include('Session.php');
-include('PostgreSQL.php');
-include('MySQL.php');
+include('libs/Cookie.php');
+include('libs/Session.php');
+include('libs/PostgreSQL.php');
+include('libs/MySQL.php');
 $mysql = new MySQL();
 $mysql->dbconnect();
 $mysql->saveData("user2","task5");
@@ -15,7 +15,7 @@ $session->saveData("user2","task5");
 $session->getData("user2");
 $session->deleteData("user2");
  
-include('template.php');
+include('template/index.php');
 
 
 
