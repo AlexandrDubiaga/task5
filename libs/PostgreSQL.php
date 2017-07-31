@@ -27,8 +27,11 @@ class PostgreSQL implements iWorkData
     {
         $array = array();
         $result = pg_query($this->connection, "SELECT * FROM pg_test");
-        $arr = pg_fetch_array($result, 0, PGSQL_NUM);
-        return $arr;
+       while ($row = pg_fetch_assoc($result)) {
+            echo $row['id'];
+            echo $row['author'];
+            echo $row['email'];
+        }
     }
     public function deleteData($key)
     {
