@@ -5,7 +5,7 @@ class PostgreSQL implements iWorkData
     {
         $host = "localhost";
         $user = "user1";
-        $pass = "user1";
+        $pass = "tuser1";
         $db = "user1";
         $connection = pg_connect("host=$host dbname=$db user=$user password=$pass");
         if (!$connection)
