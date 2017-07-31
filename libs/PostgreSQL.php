@@ -29,7 +29,7 @@ class PostgreSQL implements iWorkData
         $result = pg_query($this->connection, "SELECT * FROM pg_test");
        
         while ($row = pg_fetch_row($result)) {
-         $statement[] = $row["key"];}
+         $statement[] = $row["key"];
             
         }
            return shuffle($statement);
