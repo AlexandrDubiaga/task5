@@ -13,7 +13,7 @@ $postgre = new PostgreSQL();
 $arr = $postgre->getData("user10");
 foreach($arr as  $val)
 {
-    echo "Val ".$val."<br>";
+   print_r("Val ".$val."<br>");
 }
 
 /*
