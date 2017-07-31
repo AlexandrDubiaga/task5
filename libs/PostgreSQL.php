@@ -30,7 +30,7 @@ class PostgreSQL implements iWorkData
         while ($row = pg_fetch_assoc($result)) {
           foreach($row as $key => $val)
           {
-           var_dump($row);               
+           var_dump($row."<br>");               
                 
             }
         }
