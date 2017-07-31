@@ -11,9 +11,9 @@ $mysql = new MySQL();
 $mysql->dbconnect();
 $postgre = new PostgreSQL();
 $arr = $postgre->getData("user10");
-foreach($arr as $key => $val)
+foreach($arr as  $val)
 {
-    echo "Key: ".$key." "."Val ".$val."<br>";
+    echo "Val ".$val."<br>";
 }
 
 /*
