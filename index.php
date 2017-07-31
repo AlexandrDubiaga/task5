@@ -11,10 +11,7 @@ $mysql = new MySQL();
 $mysql->dbconnect();
 $postgre = new PostgreSQL();
 $arr = $postgre->getData("user10");
-foreach($arr as $key => $val)
-{
-print_r("Val :".$key."Val :".$val."<br>");
-}
+
 /*
 $mysql->saveData("user2","task5");
 $mysql->getData("user2");
