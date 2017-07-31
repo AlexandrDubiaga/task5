@@ -1,7 +1,7 @@
 <?php
 class PostgreSQL implements iWorkData
 {
-    public functionn __construct()
+    public function __construct()
     {
         $host = "localhost";
         $user = "user1";
