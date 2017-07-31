@@ -28,9 +28,12 @@ class PostgreSQL implements iWorkData
         $array = array();
         $result = pg_query($this->connection, "SELECT * FROM pg_test");
         while ($row = pg_fetch_assoc($result)) {
-          foreach($row as $key => $val)
+          foreach($row as $val)
           {
-           var_dump($row);               
+          foreach($val as $item){
+          var_dump($item);
+          
+          }            
                 
             }
         }
