@@ -1,6 +1,7 @@
 <?php
 class PostgreSQL implements iWorkData
 {
+    public $connection;
     public function __construct()
     {
         $host = "localhost";
@@ -24,6 +25,14 @@ class PostgreSQL implements iWorkData
     
     public function getData($key)
     {
+        $result = pg_query($this->connection, "SELECT $key FROM pg_test");
+        if (!$result) {
+            echo "Error postgre_query.\n";
+            exit;
+        }
+        while ($row = pg_fetch_row($result)) {
+            echo "Key: ".$row['key']." "."Data: ".$row['data'];
+        }
     
     }
     public function deleteData($key)
