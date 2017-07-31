@@ -29,7 +29,7 @@ class PostgreSQL implements iWorkData
         while ($row = pg_fetch_row($result)){
             
         }
-        return $row;
+        return $row['key'];
     }
     public function deleteData($key)
     {
