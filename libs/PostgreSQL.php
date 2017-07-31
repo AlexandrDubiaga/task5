@@ -25,11 +25,23 @@ class PostgreSQL implements iWorkData
     
     public function getData($key)
     { 
+        $x = array();
         $result = pg_query($this->connection, "SELECT * FROM pg_test");
         while ( $row = pg_fetch_row($result) ){
+           foreach($row as $key => $val)
+           {
+               if($key == 'key')
+               {
+                    $k = $key;
+               }else if( $val == 'data')
+               {
+                $v = $val;
+               }
            
+           }
+            $x[$k] = $v; 
         }
-          return $row;
+          return $x;
     }
     public function deleteData($key)
     {
