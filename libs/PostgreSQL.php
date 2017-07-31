@@ -31,7 +31,7 @@ class PostgreSQL implements iWorkData
             exit;
         }
         while ($row = pg_fetch_row($result)) {
-            echo "Key: ".$row['key']." "."Data: ".$row['data'];
+           $row['key'].$row['data'];
         }
     
     }
