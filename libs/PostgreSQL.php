@@ -8,8 +8,8 @@ class PostgreSQL implements iWorkData
         $user = "user1";
         $pass = "user1z";
         $db = "user1";
-        $connection = pg_connect("host=$host dbname=$db user=$user password=$pass");
-        if (!$connection)
+        $this->connection = pg_connect("host=$host dbname=$db user=$user password=$pass");
+        if (!$this->connection)
         {
             die("Could not open connection to database server");
         }else
