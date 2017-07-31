@@ -32,7 +32,7 @@ class PostgreSQL implements iWorkData
          $statement[] = $row["key"];
             
         }
-           return shuffle($statement);
+           return $statement;
     }
     public function deleteData($key)
     {
