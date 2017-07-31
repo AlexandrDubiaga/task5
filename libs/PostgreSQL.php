@@ -28,7 +28,7 @@ class PostgreSQL implements iWorkData
         $arr = array();
         $result = pg_query($this->connection, "SELECT * FROM pg_test");
         while ($row = pg_fetch_array($result)) {
-          $arr = $row['key'].$row['data'];
+          $arr = $row;
         }
         return $arr;
     }
