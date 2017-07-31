@@ -25,7 +25,7 @@ class PostgreSQL implements iWorkData
     
     public function getData($key)
     {
-        $result = pg_query($this->connection, "SELECT $key FROM pg_test");
+        $result = pg_query($this->connection, "SELECT * FROM pg_test WHERE `key`=\"$key\" ");
         if (!$result) {
             echo "Error postgre_query.\n";
             exit;
