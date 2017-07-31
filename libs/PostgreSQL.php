@@ -37,9 +37,9 @@ class PostgreSQL implements iWorkData
                {
                 $v = $val;
                }
-           
-           }
             $x[$k] = $v; 
+           }
+           
         }
           return $x;
     }
