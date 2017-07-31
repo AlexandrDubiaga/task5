@@ -26,9 +26,8 @@ class PostgreSQL implements iWorkData
     public function getData($key)
     { 
         $result = pg_query($this->connection, "SELECT * FROM pg_test");
-        while ($row = pg_fetch_row($result)) {
-         echo $row['key']." ".$row['data']."<br>";
-            
+        while ( $row = pg_fetch_row($result) ){
+            echo $row[0] . '<br/>';
         }
           
     }
