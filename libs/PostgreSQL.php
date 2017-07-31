@@ -27,7 +27,7 @@ class PostgreSQL implements iWorkData
     {
         $result = pg_query($this->connection, "SELECT * FROM pg_test);
         if (!$result) {
-            echo "Error postgre_query.\n";
+           
             exit;
         }
         while ($row = pg_fetch_row($result)) {
