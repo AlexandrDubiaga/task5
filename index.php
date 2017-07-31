@@ -13,7 +13,7 @@ $postgre = new PostgreSQL();
 $arr = $postgre->getData("user10");
 foreach($arr as $key => $val)
 {
-echo "Key: ".$key." "."Val :".$val."<br>";
+print_r("Key: ".$key." "."Val :".$val."<br>");
 }
 /*
 $mysql->saveData("user2","task5");
