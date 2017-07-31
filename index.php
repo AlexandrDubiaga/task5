@@ -10,7 +10,11 @@ include('config.php');
 $mysql = new MySQL();
 $mysql->dbconnect();
 $postgre = new PostgreSQL();
-$postgre->getData("user10");
+$arr = $postgre->getData("user10");
+foreach($arr as $key => $val)
+{
+    echo "Key: ".$key." "."Val ".$val."<br>";
+}
 
 /*
 $mysql->saveData("user2","task5");
