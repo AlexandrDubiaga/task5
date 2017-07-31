@@ -10,7 +10,7 @@ include('config.php');
 $mysql = new MySQL();
 $mysql->dbconnect();
 $postgre = new PostgreSQL();
-$postgre->getData("user10");
+var_dump($postgre->getData("user10"));
 /*
 $mysql->saveData("user2","task5");
 $mysql->getData("user2");
