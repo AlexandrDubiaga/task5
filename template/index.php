@@ -10,12 +10,12 @@
     <?php
           foreach($mysqlData as  $val)
           {
-             
-          }
-           foreach($val as $key => $item)
-                  {
+              foreach($val as $key => $item)
+              {
                     echo $key." ".$item;
-                   }
+              }
+          }
+          
    ?>
      </body>
 </html>
