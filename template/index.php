@@ -10,9 +10,10 @@
     <?php
           foreach($mysqlData as $val)
           {
+               var_dump($val);
                foreach($val as $key => $value)
                {
-                    echo $value['key']." ".$value['data'];
+                  
                }
                echo "<br>";
           }
