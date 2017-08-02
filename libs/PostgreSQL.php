@@ -22,7 +22,7 @@ class PostgreSQL implements iWorkData
     {
         if (!empty($key) && !empty($val))
         {
-            $result = pg_query('INSERT into pg_test VALUES("' . $key . '","' . $val . '")')  or die("Something wrong");
+            $result = pg_query('INSERT into pg_test(key,data) VALUES("' . $key . '","' . $val . '")')  or die("Something wrong");
             echo "Good data added<br>";
         }
     
