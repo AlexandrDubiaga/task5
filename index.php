@@ -19,7 +19,7 @@ $mysql->saveData("user2","task5");
 $mysqlData = $mysql->getData("user2");
 $mysql->deleteData("user2");
 
-    /*
+
 $session = new Session();
 $saveSession = $session->saveData("user2","task5");
 $getSession = $session->getData("user2");
@@ -28,19 +28,19 @@ $deleteSession = $session->deleteData("user2");
 $cookie = new Cookie();
 $setCookie = $cookie->saveData('user2','task5');
 if($setCookie){
-    echo ADD_COOKIE;
+    $addCookie =  ADD_COOKIE;
 }else{
-    echo NOT_ADD_COOKIE;
+    $notAddCookie =  NOT_ADD_COOKIE;
 }
 $deleteCookie = $cookie->deleteData('user2');
 if($deleteCookie){
-    echo DELETE_COOKIE;
+   $delCookie =  DELETE_COOKIE;
 }else{
-    echo NOT_DELETE_COOKIE;
+    $notDelCookie =  NOT_DELETE_COOKIE;
 }
 
 
-*/
+
 include('template/index.php');
 
 
