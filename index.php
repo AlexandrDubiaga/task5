@@ -10,13 +10,14 @@ include('config.php');
 $mysql = new MySQL();
 $mysql->dbconnect();
 $postgre = new PostgreSQL();
-$arr = $postgre->getData("user10");
+//$arr = $postgre->getData("user10");
 
-/*
+
 $mysql->saveData("user2","task5");
 $mysql->getData("user2");
-$mysql->deleteData("user2");
-
+/*$mysql->deleteData("user2");
+*/
+    /*
 $session = new Session();
 $saveSession = $session->saveData("user2","task5");
 $getSession = $session->getData("user2");
