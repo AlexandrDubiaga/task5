@@ -10,7 +10,7 @@
      foreach($mysqlData as $val)
      {
            foreach($val as $key => $value)
-          echo "Key: ".$key," "."Data: ".$value."<br>";
+          echo "Key: ".$key." "."Data: ".$value."<br>";
      }
   
     ?>
