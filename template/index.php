@@ -8,7 +8,10 @@
           <h1>Mysql</h1><br>
           
     <?php
-       
-   ?>
+       foreach($mysqlData as $val => $item)
+       {
+          echo $val['key']." ".$item."<br>";
+       }
+     ?>
      </body>
 </html>
