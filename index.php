@@ -14,7 +14,7 @@ $postgre = new PostgreSQL();
 
 
 /*$mysql->saveData("user2","task5");*/
-$mysqlData = $mysql->getData("user2");
+var_dump($mysqlData = $mysql->getData("user2"));
 /*$mysql->deleteData("user2");
 */
     /*
