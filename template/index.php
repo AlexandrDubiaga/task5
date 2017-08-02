@@ -7,9 +7,10 @@
      <body>
           <h1>Mysql</h1><br>
     <?php
-     foreach($mysqlData as $key => $val)
+     foreach($mysqlData as $val)
      {
-          echo "Key: ".$key," "."Data: ".$val."<br>";
+           foreach($val as $key => $value)
+          echo "Key: ".$key," "."Data: ".$value."<br>";
      }
   
     ?>
