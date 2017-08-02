@@ -26,7 +26,10 @@ class MySQL implements iWorkData
         if (!empty($key) && !empty($val))
         {
             $result = mysql_query('INSERT into MY_TEST VALUES("' . $key . '","' . $val . '")')  or die("Something wrong");
-            echo "Good data added<br>";
+            if($result)
+	    {
+	    	return true;
+	    }
         }
     }
     
@@ -42,6 +45,10 @@ class MySQL implements iWorkData
     public function deleteData($key)
     {
     	$delete = mysql_query("DELETE  FROM MY_TEST WHERE `key`=\"$key\" ") or die("Cant delete something wrong");
+	if($delete)
+	{
+		return true;
+	}
     }
 }
 ?>
