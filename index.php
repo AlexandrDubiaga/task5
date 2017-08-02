@@ -46,7 +46,7 @@ if($saveSession)
     $sessionNotSave = SESSION_NOT_SAVE;
 }
 
-$getSession = $session->getData("user2");
+
 $deleteSession = $session->deleteData("user2");
 if($deleteSession)
 {
@@ -55,6 +55,7 @@ if($deleteSession)
 {
     $sessionNotDelete = SESSION_NOT_DELETE;
 }
+$getSession = $session->getData("user2");
 
 $cookie = new Cookie();
 $setCookie = $cookie->saveData('user2','task5');
@@ -64,7 +65,7 @@ if($setCookie){
 {
     $notAddCookie =  NOT_ADD_COOKIE;
 }
-$getCookies = $cookie->getData("user2");
+
 $deleteCookie = $cookie->deleteData('user2');
 if($deleteCookie){
    $delCookie =  DELETE_COOKIE;
@@ -72,7 +73,7 @@ if($deleteCookie){
 {
     $notDelCookie =  NOT_DELETE_COOKIE;
 }
-
+$getCookies = $cookie->getData("user2");
 
 
 include('template/index.php');
