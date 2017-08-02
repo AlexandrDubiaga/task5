@@ -12,8 +12,9 @@
           {
                foreach($val as $key => $value)
                {
-                    echo $key." ".$value."<br>";
+                    echo $value;
                }
+               echo "<br>";
           }
      ?>
      </body>
