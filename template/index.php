@@ -7,7 +7,7 @@
     <?php
           echo $postgreAdd;
           echo $deletePostge;
-          exho $mysqlAdd;
+          echo $mysqlAdd;
           echo $mysqlDel;
           echo $sessionSave;
           echo $sessionNotSave;
