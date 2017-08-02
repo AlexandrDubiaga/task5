@@ -16,7 +16,10 @@
           echo $notAddCookie;
           echo $delCookie;
           echo $notDelCookie;
+          
+          echo $getSession;
           ?>
+          
            <h1>Mysql</h1><br>
           <?php
           foreach($mysqlData as $val)
