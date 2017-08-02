@@ -34,7 +34,7 @@ class MySQL implements iWorkData
 	  
         if (!empty($key)){
             $result = mysql_query("SELECT * FROM MY_TEST WHERE `key`=\"$key\" ") or die("Something wrong with query");
-            while($row[]= mysql_fetch_assoc($result)){ }
+            while($row[]= mysql_fetch_arrsy($result, MYSQL_ASSOC)){ }
             }else echo mysql_error();
 	    return $row;
     }
