@@ -12,7 +12,7 @@
           {
                foreach($val as $key => $value)
                {
-                    echo $value;
+                    echo $value['key']." ".$value['data'];
                }
                echo "<br>";
           }
