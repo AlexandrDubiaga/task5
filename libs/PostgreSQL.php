@@ -38,7 +38,7 @@ class PostgreSQL implements iWorkData
     }
     public function deleteData($key)
     {
-    
+        $delete = pg_query("DELETE  FROM pg_test WHERE key='$key' ") or die("Cant delete something wrong");
     }
 }
 ?>
