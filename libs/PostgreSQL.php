@@ -1,7 +1,7 @@
 <?php
 class PostgreSQL implements iWorkData
 {
-    public $connection;
+    protected $connection;
     public function __construct()
     {
         $host = "localhost";
@@ -24,9 +24,9 @@ class PostgreSQL implements iWorkData
         {
             $result = pg_query("INSERT into pg_test(key,data) VALUES('$key','$val')")  or die("Something wrong");
             if($result)
-	        {
-	    	    return true;
-	        }
+	    {
+	    	return true;
+	    }
         }
     
     }
