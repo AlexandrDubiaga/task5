@@ -10,7 +10,7 @@
     <?php
        foreach($mysqlData as $val => $item)
        {
-         echo $item;
+         echo $item['data'];
        }
      ?>
      </body>
