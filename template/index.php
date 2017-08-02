@@ -13,5 +13,12 @@
                echo $val['key'] ." ".$val['data']."<br>";
           }
      ?>
+           <h1>Postgre</h1><br>
+           <?php
+          foreach($arr as $val)
+          {
+               echo $val['key'] ." ".$val['data']."<br>";
+          }
+     ?>
      </body>
 </html>
