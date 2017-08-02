@@ -10,12 +10,7 @@
     <?php
           foreach($mysqlData as $val)
           {
-               var_dump($val);
-               foreach($val as $key => $value)
-               {
-                  
-               }
-               echo "<br>";
+               echo $val['key]['data'];
           }
      ?>
      </body>
