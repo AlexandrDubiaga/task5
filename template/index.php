@@ -10,6 +10,7 @@
     <?php
           foreach($mysqlData as  $val)
           {
+               var_dump($val);
                  foreach($val as $key => $item)
                   {
                     echo $key." ".$item;
