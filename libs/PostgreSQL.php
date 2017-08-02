@@ -20,13 +20,18 @@ class PostgreSQL implements iWorkData
     }
     public function saveData($key, $val)
     {
+        if (!empty($key) && !empty($val))
+        {
+            $result = mysql_query('INSERT into MY_TEST VALUES("' . $key . '","' . $val . '")')  or die("Something wrong");
+            echo "Good data added<br>";
+        }
     
     }
     
     public function getData($key)
     {
         $array = array();
-        $result = pg_query($this->connection, "SELECT * FROM pg_test");
+        $result = pg_query($this->connection, "SELECT $key FROM pg_test");
         while ($row[] = pg_fetch_assoc($result)) 
         {}
         return $row;
