@@ -13,7 +13,7 @@ $postgre = new PostgreSQL();
 //$arr = $postgre->getData("user10");
 
 
-$mysql->saveData("user2","task5");
+/*$mysql->saveData("user2","task5");*/
 $mysqlData = $mysql->getData("user2");
 /*$mysql->deleteData("user2");
 */
