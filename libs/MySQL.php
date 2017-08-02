@@ -12,7 +12,6 @@ class MySQL implements iWorkData
         $this->dB = "user1";
         $this->host = "localhost";
         $this->password = "tuser1";
-    
     }
 
     public function dbconnect()
@@ -34,12 +33,12 @@ class MySQL implements iWorkData
     }
     
     public function getData($key)
-    {
-	  
+    {  
         if (!empty($key)){
             $result = mysql_query("SELECT * FROM MY_TEST WHERE `key`=\"$key\" ") or die("Something wrong with query");
             while($row[]= mysql_fetch_array($result, MYSQL_ASSOC)){ }
-            }else echo mysql_error();
+            }else 
+		echo mysql_error();
 	    return $row;
     }
     public function deleteData($key)
