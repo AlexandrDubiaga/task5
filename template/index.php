@@ -2,9 +2,8 @@
      <head>
           <title>task5</title>
      </head>
-     <body>
-             
-    <?php
+     <body>        
+     <?php
           echo $postgreAdd;
           echo $deletePostge;
           echo $mysqlAdd;
@@ -22,8 +21,7 @@
           echo "Cookie: ".$getCookies;
         
           ?>
-          
-           <h1>Mysql</h1><br>
+          <h1>Mysql</h1><br>
           <?php
           foreach($mysqlData as $val)
           {
