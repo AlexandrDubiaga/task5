@@ -10,7 +10,7 @@
     <?php
           foreach($mysqlData as $val)
           {
-               var_dump($val);
+               echo $val['key'];
           }
      ?>
      </body>
