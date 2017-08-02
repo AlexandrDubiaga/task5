@@ -34,9 +34,9 @@ class MySQL implements iWorkData
 	    $arr = array();
         if (!empty($key)){
             $result = mysql_query("SELECT * FROM MY_TEST WHERE `key`=\"$key\" ") or die("Something wrong with query");
-            while($row = mysql_fetch_array($result)){}
+            while($row = mysql_fetch_array($result)){var_dump($row);}
         }else echo mysql_error();
-	    return $row;
+	
     }
     public function deleteData($key)
     {
