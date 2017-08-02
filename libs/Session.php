@@ -3,10 +3,11 @@ class Session implements iWorkData
 {
     public function saveData($key, $val)
     {   
-        if(!$key || !$val || empty($key) || empty($val)){
+        if(!$key || !$val || empty($key) || empty($val))
+        {
             return false;
         }
-        if(isset($key) && isset($val) )
+        if(isset($key) && isset($val))
         {
             return  $_SESSION[$key] = $val;
         }
