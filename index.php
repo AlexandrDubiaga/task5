@@ -10,32 +10,66 @@ include('config.php');
 $mysql = new MySQL();
 $mysql->dbconnect();
 $postgre = new PostgreSQL();
-$postgre->saveData("user2","task5");
+
+$postgreSaveData = $postgre->saveData("user2","task5");
+if($postgreSaveData)
+{
+    $postgreAdd = ADD_POSTGRE;
+}
 $arr = $postgre->getData("user2");
-$postgre->deleteData("user2");
+$delPostgre = $postgre->deleteData("user2");
+if($delPostgre)
+{
+    $deletePostge = DEL_POSTGRE;
+}
 
 
-$mysql->saveData("user2","task5");
+$mysqlSaveData = $mysql->saveData("user2","task5");
+if($mysqlSaveData)
+{
+    $mysqlAdd = ADD_MYSQL;
+}
 $mysqlData = $mysql->getData("user2");
-$mysql->deleteData("user2");
-
+$mysqlDeleteData = $mysql->deleteData("user2");
+if($mysqlDeleteData)
+{
+    $mysqlDel = DEL_MYSQL;
+}
 
 $session = new Session();
 $saveSession = $session->saveData("user2","task5");
+if($saveSession)
+{
+    $sessionSave = SESSION_SAVE;
+}else
+{
+    $sessionNotSave = SESSION_NOT_SAVE;
+}
+
 $getSession = $session->getData("user2");
 $deleteSession = $session->deleteData("user2");
+if($deleteSession)
+{
+    $sessionDelete = SESSION_DELETE;
+}else
+{
+    $sessionNotDelete = SESSION_NOT_DELETE;
+}
 
 $cookie = new Cookie();
 $setCookie = $cookie->saveData('user2','task5');
 if($setCookie){
     $addCookie =  ADD_COOKIE;
-}else{
+}else
+{
     $notAddCookie =  NOT_ADD_COOKIE;
 }
+$getCookies = $cookie->getData("user2");
 $deleteCookie = $cookie->deleteData('user2');
 if($deleteCookie){
    $delCookie =  DELETE_COOKIE;
-}else{
+}else
+{
     $notDelCookie =  NOT_DELETE_COOKIE;
 }
 
