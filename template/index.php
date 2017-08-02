@@ -12,7 +12,7 @@
           {
                  foreach($val as $key => $item)
                   {
-                    echo $key." ".$val."<br>";
+                    echo $key." ".$item."<br>";
                    }
                
           }
