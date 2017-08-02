@@ -14,6 +14,7 @@
               {
                     echo $key." ".$item;
               }
+                echo "<br>";
           }
           
    ?>
