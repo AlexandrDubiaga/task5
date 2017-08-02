@@ -15,10 +15,10 @@ $arr = $postgre->getData("user2");
 $postgre->deleteData("user2");
 
 
-/*$mysql->saveData("user2","task5");*/
+$mysql->saveData("user2","task5");
 $mysqlData = $mysql->getData("user2");
-/*$mysql->deleteData("user2");
-*/
+$mysql->deleteData("user2");
+
     /*
 $session = new Session();
 $saveSession = $session->saveData("user2","task5");
