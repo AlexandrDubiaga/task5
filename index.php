@@ -12,6 +12,7 @@ $mysql->dbconnect();
 $postgre = new PostgreSQL();
 $postgre->saveData("user2","task5");
 $arr = $postgre->getData("user2");
+$postgre->deleteData("user2");
 
 
 /*$mysql->saveData("user2","task5");*/
