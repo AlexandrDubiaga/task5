@@ -1,12 +1,9 @@
 <html>
      <head>
-          <title>
-             task5
-          </title>
+          <title>task5</title>
      </head>
      <body>
-          <h1>Mysql</h1><br>
-          
+          <h1>Mysql</h1><br>    
     <?php
           echo $postgreAdd;
           echo $deletePostge;
@@ -25,7 +22,7 @@
           }
      ?>
            <h1>Postgre</h1><br>
-           <?php
+     <?php
           foreach($arr as $val)
           {
                echo $val['key'] ." ".$val['data']."<br>";
