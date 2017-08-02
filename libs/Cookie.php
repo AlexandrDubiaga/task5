@@ -6,7 +6,8 @@ class Cookie implements iWorkData
         if(!$key || !$val || empty($key) || empty($val)){
             return false;
         }
-        if(isset($key) && isset($val) ) {
+        if(isset($key) && isset($val))
+        {
             setcookie("$key", "$val", time() + 3600);
             return true;
         }
@@ -15,10 +16,12 @@ class Cookie implements iWorkData
     
     public function getData($key)
     {
-        if(!$key || empty($key)){
+        if(!$key || empty($key))
+        {
             return false;
         }
-        if(isset($key) && !empty($key)){
+        if(isset($key) && !empty($key))
+        {
             return $_COOKIE[$key];
         }
         return false;
@@ -28,7 +31,8 @@ class Cookie implements iWorkData
         if(!$key || empty($key)){
             return false;
         }
-        if(isset($key) && !empty($key)) {
+        if(isset($key) && !empty($key))
+        {
             unset ($_COOKIE [$key]);
             return true;
          }
