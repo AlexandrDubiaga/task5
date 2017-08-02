@@ -3,7 +3,7 @@
           <title>task5</title>
      </head>
      <body>
-          <h1>Mysql</h1><br>    
+             
     <?php
           echo $postgreAdd;
           echo $deletePostge;
@@ -16,6 +16,9 @@
           echo $notAddCookie;
           echo $delCookie;
           echo $notDelCookie;
+          ?>
+           <h1>Mysql</h1><br>
+          <?php
           foreach($mysqlData as $val)
           {
                echo $val['key'] ." ".$val['data']."<br>";
