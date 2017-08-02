@@ -31,7 +31,7 @@ class PostgreSQL implements iWorkData
     public function getData($key)
     {
         $array = array();
-        $result = pg_query($this->connection, "SELECT * from pg_test WHERE `key`=\"$key\" ");
+        $result = pg_query($this->connection, "SELECT * from pg_test WHERE key=\"$key\" ");
         while ($row[] = pg_fetch_assoc($result)) 
         {}
         return $row;
