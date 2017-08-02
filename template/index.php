@@ -17,7 +17,10 @@
           echo $delCookie;
           echo $notDelCookie;
           
-          echo $getSession;
+          echo "Session: ".$getSession;
+          echo "<br>";
+          echo "Cookie: ".$getCookies;
+        
           ?>
           
            <h1>Mysql</h1><br>
