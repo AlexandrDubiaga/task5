@@ -23,7 +23,6 @@ if($delPostgre)
     $deletePostge = DEL_POSTGRE;
 }
 
-
 $mysqlSaveData = $mysql->saveData("user2","task5");
 if($mysqlSaveData)
 {
@@ -45,7 +44,6 @@ if($saveSession)
 {
     $sessionNotSave = SESSION_NOT_SAVE;
 }
-
 
 $deleteSession = $session->deleteData("user2");
 if($deleteSession)
@@ -77,9 +75,5 @@ $getCookies = $cookie->getData("user2");
 
 
 include('template/index.php');
-
-
-
-
 
 ?>
