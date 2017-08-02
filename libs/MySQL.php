@@ -15,11 +15,12 @@ class MySQL implements iWorkData
     
     }
 
-    public function dbconnect() {
+    public function dbconnect()
+    {
         $this->conn = mysql_connect($this->host, $this->user, $this->password) or die ("<br/>cant connect to  MySQL");
         mysql_select_db($this->dB,$this->conn) or die ("<br/>DB not found");
         return $this->conn;
-  }
+    }
     public function saveData($key, $val)
     {
         if (!empty($key) && !empty($val))
