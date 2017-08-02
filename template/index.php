@@ -10,7 +10,11 @@
     <?php
           foreach($mysqlData as $key => $val)
           {
-               echo $key." ".$val."<br>";
+                 foreach($val as $key => $item)
+                  {
+                    echo $key." ".$val."<br>";
+                   }
+               
           }
    ?>
      </body>
