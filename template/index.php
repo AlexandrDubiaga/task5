@@ -9,7 +9,7 @@
     <?php
      foreach($mysqlData as $val){}
      foreach($val as $key => $value)
-          echo "Data: ".$value."<br>";
+          echo "Data: ".$value;
     ?>
      </body>
 </html>
